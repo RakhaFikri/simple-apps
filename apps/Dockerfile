@@ -2,7 +2,7 @@
 FROM node:18.16
 
 #WORKDIR
-WORKDIR app/
+WORKDIR /app
 
 #COPY FILE TO IMAGE
 ADD . /app
