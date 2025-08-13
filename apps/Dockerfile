@@ -1,11 +1,14 @@
 #MENENTUKAN IMAGES
 FROM node:18.16
 
-#PERINTAH YANG DIJALANKAN
-RUN apt-get clean && apt update -y && npm install
+#WORKDIR
+WORKDIR app/
 
 #COPY FILE TO IMAGE
 ADD . /app
+
+#PERINTAH YANG DIJALANKAN
+RUN apt update -y && npm install
 
 # MAINTAINER IMAGE
 # LABEL email= "rakha.fikri10@gmail.com"
