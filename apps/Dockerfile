@@ -2,7 +2,7 @@
 FROM node:18.16
 
 #PERINTAH YANG DIJALANKAN
-RUN apt update -y && npm install
+RUN apt-get clean && apt update -y && npm install
 
 #COPY FILE TO IMAGE
 ADD . /app
