@@ -8,7 +8,7 @@ RUN apt update -y && npm install
 ADD . /app
 
 # MAINTAINER IMAGE
-LABEL email= "rakha.fikri10@gmail.com"
+# LABEL email= "rakha.fikri10@gmail.com"
 
 # PERINTAH YANG DIJALANKAN PADA SAAT CONTIANER SUDAH UP
 CMD ["npm","start"]
